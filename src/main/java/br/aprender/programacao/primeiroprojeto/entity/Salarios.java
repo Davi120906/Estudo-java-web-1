@@ -1,12 +1,36 @@
 package br.aprender.programacao.primeiroprojeto.entity;
 
 import java.math.BigDecimal;
-///@Entity
-/// @Table(schema = "")
+
 public class Salarios {
-    private BigDecimal meuSalario = BigDecimal.ZERO;
-    
-    public Salarios( BigDecimal salario){
-        this.meuSalario = salario;
+    private BigDecimal meuSalarioDeProgramador = BigDecimal.ZERO;
+    private BigDecimal meuSalarioDeStreamer = BigDecimal.ZERO;
+
+    public Salarios(){
+    }
+
+    public Salarios(BigDecimal SalarioProgramador) {
+        this.meuSalarioDeProgramador = SalarioProgramador;
+    }
+
+    public Salarios(BigDecimal SalarioProgramador, BigDecimal SalarioStreamer) {
+        this.meuSalarioDeProgramador = SalarioProgramador;
+        this.meuSalarioDeStreamer = SalarioStreamer;
+    }
+
+    public BigDecimal getMeuSalarioDeProgramador() {
+        return meuSalarioDeProgramador;
+    }
+
+    public void setMeuSalarioDeProgramador(BigDecimal meuSalarioDeProgramador) {
+        this.meuSalarioDeProgramador = meuSalarioDeProgramador;
+    }
+
+    public BigDecimal getMeuSalarioDeStreamer() {
+        return meuSalarioDeStreamer;
+    }
+
+    public void setMeuSalarioDeStreamer(BigDecimal meuSalarioDeStreamer) {
+        this.meuSalarioDeStreamer = meuSalarioDeStreamer;
     }
 }
