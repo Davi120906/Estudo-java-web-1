@@ -15,5 +15,9 @@ public class GeradorDeSalarios {
 
         return salarioProgramador.getMeuSalarioDeProgramador();
     }
+    public Salarios todosSalarios(){
+        Salarios salarios = new Salarios(new BigDecimal("10.00"), new BigDecimal("20.00"));
+        return salarios;
+    }
 
 }

@@ -9,7 +9,7 @@ public class PrimeiroprojetoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PrimeiroprojetoApplication.class, args);
 		
-		System.out.println("DEU TUDO CERTO EU ACHO");
+		System.out.println("O Site esta online!");
 	}
 
 }

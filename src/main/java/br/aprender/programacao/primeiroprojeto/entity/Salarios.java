@@ -33,4 +33,8 @@ public class Salarios {
     public void setMeuSalarioDeStreamer(BigDecimal meuSalarioDeStreamer) {
         this.meuSalarioDeStreamer = meuSalarioDeStreamer;
     }
+    @Override
+    public String toString(){
+        return String.format("Salario de programador: %.2f, Salario de Streamer> %.2f", this.meuSalarioDeProgramador, this.meuSalarioDeStreamer);
+    }
 }
